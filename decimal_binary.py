@@ -1,5 +1,7 @@
-# decimal > binary converter
 def decimal_binary():
+    """
+    decimal to binary converter
+    """
     octet = [128,64,32,16,8,4,2,1]
     binary = ''
     decimal_input = int(input("enter decimal number: "))
