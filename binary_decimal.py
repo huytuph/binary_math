@@ -1,4 +1,3 @@
-# BINARY MATH TOOL
 # binary > decimal converter can do up to 8 binary digits
 
 
@@ -27,4 +26,3 @@ def binary_decimal():
         print(f"Decimal number: {decimal_total}")    
     else:
         print("invalid")
-       
