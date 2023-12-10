@@ -1,7 +1,7 @@
 def binary_decimal():
     """
     binary to decimal converter
-    - currenty can only convert up to 8 binary digits
+    - currenty can only convert up to 8 bits
     """
     octet = [128,64,32,16,8,4,2,1]
     binary = []
