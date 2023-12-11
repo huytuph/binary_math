@@ -1,4 +1,7 @@
 def bits_list(usr_in):
+    """
+    bit count for binary input 
+    """
     bin_len = len(usr_in)
     bits_num = []
     bits = 1
@@ -9,5 +12,5 @@ def bits_list(usr_in):
     bits_num.reverse()
     print(bits_num)
 
-usr_in = "11001100"
+usr_in = input("Enter binary number: ")
 bits_list(usr_in)
