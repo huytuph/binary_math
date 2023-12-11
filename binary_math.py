@@ -1,8 +1,5 @@
-"""
-binary math tool
-"""
 import binary_decimal, decimal_binary, os
-#
+
 def clear_screen():
     """
     clears screen for all operating systems
@@ -15,8 +12,8 @@ def clear_screen():
 def _invalid():
     """invalid if user input is not accepted"""
     print("\n!! invalid option !!\nplease try again...\n")
-#
-#
+
+
 """
 Main menu for binary math tool
 """
@@ -29,8 +26,7 @@ while True:
 (q) Exit """)
     option = str(input("Select an option: "))
     if option == "q" or option == "Q":
-        exit()
-        
+        exit()     
     elif option == "1":   
         while True:
             clear_screen()
@@ -40,9 +36,7 @@ while True:
             if opt == "n" or opt == "N":
                 continue
             elif opt == "y" or opt == "Y":
-                break
-        #clear_screen()
-        
+                break        
     elif option == "2":
         while True:
             clear_screen()
@@ -53,8 +47,5 @@ while True:
                 continue
             elif opt == "y" or opt == "Y":
                 break
-        #clear_screen()
     else:
         _invalid()
-##
-##
