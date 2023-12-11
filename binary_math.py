@@ -1,22 +1,21 @@
 import binary_decimal, decimal_binary, os
 
+
 def clear_screen():
     """
     clears screen for all operating systems
     """
-    if os.name == 'nt':
-        os.system('cls')
+    if os.name == 'nt': # 'nt' == windows
+        os.system('cls')    # if os = windows:
     else:
-        os.system('clear')
+        os.system('clear')  # if os = linux/unix:
 
 def _invalid():
     """invalid if user input is not accepted"""
     print("\n!! invalid option !!\nplease try again...\n")
 
 
-"""
-Main menu for binary math tool
-"""
+# Main menu for binary math tool
 while True:
     clear_screen()
     print("""
