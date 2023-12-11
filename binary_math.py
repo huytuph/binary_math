@@ -1,23 +1,21 @@
 """
 binary math tool
 """
-import binary_decimal, decimal_binary  
-    
+import binary_decimal, decimal_binary, os
+
+def clear_screen():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
 def _invalid():
     """invalid if user input is not accepted"""
     print("\n!! invalid option !!\nplease try again...\n")
 
-def _return():
-    """ return to previous menu"""
-    while True:
-        opt = str(input("\n'r' to return to previous menu: "))
-        if opt == "r":
-            break
-        else:
-            _invalid()
-            continue
+##
+##
 
-##########################################################
 """
 Main menu for binary math tool
 Current options:
@@ -25,7 +23,6 @@ Current options:
 (2) Decimal to Binary conversion
 (x) Exit 
 """
-#print("\n>> BINARY MATH TOOL <<")
 while True:
     print("""
 >> BINARY MATH TOOL <<
@@ -38,13 +35,28 @@ while True:
         exit()
         
     elif option == "1":   
-        binary_input = input("\nEnter binary number: ")
-        binary_decimal.binary_decimal(binary_input)
+        while True:
+            binary_input = input("\nEnter binary number: ")
+            binary_decimal.binary_decimal(binary_input)
+            opt = str(input("\nreturn to previous menu? (y/N): "))
+            if opt == "n" or opt == "N":
+                continue
+            elif opt == "y" or opt == "Y":
+                break
+        clear_screen()
         
     elif option == "2":
-        decimal_input = int(input("\nEnter decimal number: "))
-        decimal_binary.decimal_binary(decimal_input)
+        while True:
+            decimal_input = int(input("\nEnter decimal number: "))
+            decimal_binary.decimal_binary(decimal_input)
+            opt = str(input("\nreturn to previous menu? (y/N): "))
+            if opt == "n" or opt == "N":
+                continue
+            elif opt == "y" or opt == "Y":
+                break
+        clear_screen()
     else:
         _invalid()
 
-##########################################################
+##
+##
