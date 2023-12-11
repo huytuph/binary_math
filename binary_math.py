@@ -1,11 +1,21 @@
 """
 binary math tool
 """
-import binary_decimal, decimal_binary
+import binary_decimal, decimal_binary  
+    
+def _invalid():
+    """invalid if user input is not accepted"""
+    print("\n!! invalid option !!\nplease try again...\n")
 
-def invalid():
-    print("\ninvalid option!\n")   
-
+def _return():
+    """ return to previous menu"""
+    while True:
+        opt = str(input("\n'r' to return to previous menu: "))
+        if opt == "r":
+            break
+        else:
+            _invalid()
+            continue
 
 ##########################################################
 """
@@ -35,6 +45,6 @@ while True:
         decimal_input = int(input("\nEnter decimal number: "))
         decimal_binary.decimal_binary(decimal_input)
     else:
-        invalid()
+        _invalid()
 
 ##########################################################
