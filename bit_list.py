@@ -13,4 +13,4 @@ def bits_list(usr_in):
     print(bits_num)
 
 usr_in = input("Enter binary number: ")
-bits_list(usr_in)
+#bits_list(usr_in)
