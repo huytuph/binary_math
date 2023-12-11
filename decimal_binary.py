@@ -1,10 +1,9 @@
-def decimal_binary():
+def decimal_binary(decimal_input):
     """
     decimal to binary converter
     """
     octet = [128,64,32,16,8,4,2,1]
     binary = ''
-    decimal_input = int(input("enter decimal number: "))
     octet_count = 8
     count = 0
 
@@ -18,4 +17,4 @@ def decimal_binary():
             binary += str(0)
             count += 1
             octet_count -= 1
-    print(f"Binary number: {binary}")
+    print(f"Binary number: {binary}\n")
