@@ -17,4 +17,4 @@ def decimal_binary(decimal_input):
             binary += str(0)
             count += 1
             octet_count -= 1
-    print(f"Binary number: {binary}\n")
+    print(f"Binary number: {binary}")

@@ -38,7 +38,7 @@ def binary_decimal(binary_input):
                 count += 1
         for dec in decimal:
             decimal_sum += dec
-    print(f"Decimal number: {decimal_sum}\n")    
+    print(f"Decimal number: {decimal_sum}")    
     
 #binary_input = input("Enter binary number: ")
 #binary_decimal(binary_input)

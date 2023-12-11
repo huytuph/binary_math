@@ -20,18 +20,19 @@ while True:
     clear_screen()
     print("""
 >> BINARY MATH TOOL <<\n          
-(1) Binary to Decimal conversion
-(2) Decimal to Binary conversion
-(q) Exit """)
-    option = str(input("Select an option: "))
+[1] Binary to Decimal conversion
+[2] Decimal to Binary conversion
+[q] Exit """)
+    option = str(input("\nSelect an option: "))
     if option == "q" or option == "Q":
+        clear_screen()
         exit()     
     elif option == "1":   
         while True:
             clear_screen()
             binary_input = input("\nEnter binary number: ")
             binary_decimal.binary_decimal(binary_input)
-            opt = str(input("\nreturn to previous menu? (y/N): "))
+            opt = str(input("\nreturn to previous menu? [y/N]: "))
             if opt == "n" or opt == "N":
                 continue
             elif opt == "y" or opt == "Y":
@@ -41,7 +42,7 @@ while True:
             clear_screen()
             decimal_input = int(input("\nEnter decimal number: "))
             decimal_binary.decimal_binary(decimal_input)
-            opt = str(input("\nreturn to previous menu? (y/N): "))
+            opt = str(input("\nreturn to previous menu? [y/N]: "))
             if opt == "n" or opt == "N":
                 continue
             elif opt == "y" or opt == "Y":
