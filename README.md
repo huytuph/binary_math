@@ -51,7 +51,7 @@ How to install Binary Math tool
 
 2. Choose an option from Main Menu
 
-3. enter option 'x' on main menu or 'CTRL-C' anytime to exit
+3. enter option 'q' on main menu or 'CTRL-C' anytime to exit
 
 ---
 
