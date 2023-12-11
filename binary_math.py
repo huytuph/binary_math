@@ -4,7 +4,7 @@ binary math tool
 import binary_decimal, decimal_binary
 
 def invalid():
-    print("invalid option")   
+    print("\ninvalid option!")   
 
 
 ##########################################################
