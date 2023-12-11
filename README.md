@@ -56,6 +56,6 @@ How to install Binary Math tool
 ---
 
 ## Contact
-#### huytuph@gmail.com
+#### available on request 
 
 ---
