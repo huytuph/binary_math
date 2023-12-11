@@ -5,16 +5,7 @@ import binary_decimal, decimal_binary
 
 def invalid():
     print("invalid option")   
-    
-def repeat():
-    while True:
-        option = "Perform another conversion? y/N\n: "
-        if option == "y" or "Y":
-            continue
-        elif option == "n" or "N":
-            break
-        else:
-            invalid()
+
 
 ##########################################################
 """
@@ -43,5 +34,7 @@ while True:
     elif option == "2":
         decimal_input = int(input("\nEnter decimal number: "))
         decimal_binary.decimal_binary(decimal_input)
+    else:
+        invalid()
 
 ##########################################################
