@@ -5,19 +5,24 @@ def ipv4_binary(ipv4_input):
         ipv4_input (_type_): _description_
     """
     ipv4_list = []
-    dec1 = ''
-    dec2 = ''
-    dec3 = ''
-    dec4 = ''
-    
-    for dec in ipv4_input:
-        ipv4_list.append(dec)
-    
-    
+    ipv4_count = 0
+    dec = ''
+    dot_count = 0
+
+    for x in ipv4_input:
+        while ipv4_count != len(ipv4_input):
+            if x != '.':           
+                dec += str(x)
+                ipv4_count += 1
+                continue
+            elif x == '.':
+                ipv4_list.append(dec)
+                dec == ''
+                continue
     print(ipv4_list)
         
 
 
-#ipv4_input = input("Enter ipv4 address: ")
-
-ipv4_binary(ipv4_input= "192.168.1.1")
+ipv4_input = "192.168.10.1"
+ipv4_binary(ipv4_input)
+#ipv4_binary(ipv4_input= "192.168.1.1")
