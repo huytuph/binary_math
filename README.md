@@ -10,6 +10,7 @@
 
 ## Features
 ### Main Menu
+- IPV4 to Binary converter (currently not available)
 - Binary to Decimal converter
 - Decimal to Binary converter
 
