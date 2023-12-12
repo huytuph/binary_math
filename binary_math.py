@@ -30,6 +30,7 @@ while True:
     elif option == "1":   
         while True:
             clear_screen()
+            print("\n>> BINARY to DECIMAL converter")
             binary_input = input("\nEnter binary number: ")
             binary_decimal.binary_decimal(binary_input)
             opt = str(input("\nreturn to previous menu? [y/N]: "))
@@ -40,6 +41,7 @@ while True:
     elif option == "2":
         while True:
             clear_screen()
+            print("\n>> DECIMAL to BINARY converter")
             decimal_input = int(input("\nEnter decimal number: "))
             decimal_binary.decimal_binary(decimal_input)
             opt = str(input("\nreturn to previous menu? [y/N]: "))
