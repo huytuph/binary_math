@@ -1,3 +1,18 @@
+"""
+usr_input = input("Enter binary number: ")
+
+pwr = 0    # power
+bit_val = 2    # bit value
+bit_val_list = []    # a list of bit values
+bin_len = len(usr_input)    # binary length
+while bin_len > 0:
+    bit_val_list.append(bit_val**pwr)    # add ({bit value} ** {power}) to bit value list
+    pwr += 1    # add 1 to power
+    bin_len -= 1    # subtract 1 from binary length
+list.reverse()    # reverse generated bit value list
+print(list)
+"""
+
 def binary_decimal(binary_input):
     """
     Binary to decimal converter
@@ -6,7 +21,6 @@ def binary_decimal(binary_input):
     bit_list = []
     bits = 1
     
-    ##########################################################
     """
     bit count for binary input
     """
@@ -17,10 +31,6 @@ def binary_decimal(binary_input):
         
     bit_list.reverse()
     
-    ##########################################################
-    """
-    Binary to decimal conversion
-    """
     binary = []
     decimal = []
     decimal_sum = 0 # result of binary to decimal conversion
