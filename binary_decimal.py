@@ -21,9 +21,6 @@ def binary_decimal(binary_input):
     bit_list = []
     bits = 1
     
-    """
-    bit count for binary input
-    """
     while bin_len != 0:
         bit_list.append(bits)
         bits *= 2
