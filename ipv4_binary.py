@@ -1,28 +1,6 @@
 def ipv4_binary(ipv4_input):
-    """
-    ipv4 to binary converter
-    Args:
-        ipv4_input (_type_): _description_
-    """
-    ipv4_list = []
-    ipv4_count = 0
-    dec = ''
-    dot_count = 0
-
-    for x in ipv4_input:
-        while ipv4_count != len(ipv4_input):
-            if x != '.':           
-                dec += str(x)
-                ipv4_count += 1
-                continue
-            elif x == '.':
-                ipv4_list.append(dec)
-                dec == ''
-                continue
-    print(ipv4_list)
-        
-
-
-ipv4_input = "192.168.10.1"
-ipv4_binary(ipv4_input)
-#ipv4_binary(ipv4_input= "192.168.1.1")
+    no_dot = []
+    if '.' in ipv4_input:
+        no_dot = ipv4_input.replace('.',' ')
+    dec_list = no_dot.split()
+    return(dec_list)
