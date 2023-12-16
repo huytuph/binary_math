@@ -1,12 +1,24 @@
-# usable host per subnet
+""" 
+usable host per subnet
 
-255 255 000 000
-multiply octets with octets then
--2 #[network address, broadcast address]
-= available hosts
-
-subnet_list = []
-host = []
-host = 0
-count = 0
-for x in subnet_list[]:
+"""
+subm_in = input("enter subnet mask: ")
+subm = subm_in.split('.')
+subnet = []
+hosts = 1
+rhosts = 0
+for x in subm:
+    subnet.append(int(x))
+for octet in subnet:
+    if 255 - octet != 0:
+        hosts *= 256
+    else:
+        continue
+        
+        
+print(subm)
+print(f'''
+total host: {hosts}
+usable hosts: {hosts-2}
+''')
+        
