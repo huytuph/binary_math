@@ -2,13 +2,12 @@
 usable host per subnet
 
 """
-subm_in = input("enter subnet mask: ")
-subm = subm_in.split('.')
-subnet = []
-hosts = 1
-rhosts = 0
+subm_in = input("enter subnet mask: ") # user input
+subm = subm_in.split('.') # octet list w/out '.'
+subnet = []    # octet list as int
+hosts = 1 # total host available on network
 for x in subm:
-    subnet.append(int(x))
+    subnet.append(int(x)) # add to subnet list as int
 for octet in subnet:
     if 255 - octet != 0:
         hosts *= 256
