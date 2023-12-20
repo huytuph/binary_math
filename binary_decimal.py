@@ -24,8 +24,7 @@ def binary_decimal(binary_input):
     while bin_len != 0:
         bit_list.append(bits)
         bits *= 2
-        bin_len -= 1
-        
+        bin_len -= 1       
     bit_list.reverse()
     
     binary = []
